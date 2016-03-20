@@ -1445,13 +1445,33 @@ void do_rcfile(void)
     free(nanorc);
     nanorc = NULL;
 
-    if (errors && !ISSET(QUIET)) {
+    //if (errors && !ISSET(QUIET)) {
 	errors = FALSE;
 	fprintf(stderr,
-		_("\nPress Enter to continue starting nano.\n"));
+		_("\n                                _ ____ "
+"\n                          ,:´.:.:.:.:.｀ヽ､"
+"\n                        ／.:.:.:.:.:.:.:.:. ＼"
+"\n                       /.:..:.:.:.:.:.:.:.:.: ヽ"
+"\n                      /..:.:.:.:∧:.:.:.:.:.:. ` "
+"\n                     /.:.:./:/:/  |:ﾄ､:ﾄ､.:.:.:|"
+"\n                     |::.:/r十/    `|'TTメ:.:.:|"
+"\n                     |:| /|/|/        `| ＼:.:.|"
+"\n                      \\|./V んﾊ      ん心 }.:.:|"
+"\n                       |:ﾊ  弋ツ     弋ツノ:.:.|"
+"\n                       |::}'\"\"          \"\"|:.:.|"
+"\n                       |::ゝ              ｲ::/:ﾉ"
+"\n                       |:/:` ＞  ｀_´ ＜:|:/／"
+"\n                    ,∠      /   ＼_／   〉｀丶､"
+"\n                  . ⌒ヽヽ   ＼   /^ヽ  /       ヽ       "
+"\n               , ´ _＿」」_|_＿      ＿_    /    `          "
+"\n              /  ´               ￣      ｀V      〉     "
+"\n             ′                           ､ ﾉ)   /|    "
+"\n               ､ _＿_ _   -‐   ´￣｀ー＜ _ノレ` |        "
+"\n                        | |                   |   |  "
+"\n               Press Enter to continue starting nano.\n"));
 	while (getchar() != '\n')
 	    ;
-    }
+    //}
 }
 
 #endif /* !DISABLE_NANORC */
